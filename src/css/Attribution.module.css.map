@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,YAAY,CAAC;EACT,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,MAAM;EAClB,KAAK,ECHa,OAAkB;EDIpC,UAAU,EAAE,IAAI;CAInB;;AARD,AAKI,YALQ,CAKR,CAAC,CAAA;EACG,KAAK,ECPI,OAAiB;CDQ7B",
+    "sources": [
+        "Attribution.module.scss",
+        "variables.scss"
+    ],
+    "names": [],
+    "file": "Attribution.module.css"
+}

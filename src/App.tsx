@@ -1,6 +1,7 @@
 import React from "react";
 import data from "./data/data.json";
 import Card from "./components/Card";
+import Attribution from "./components/Attribution";
 
 const App: React.FC = () => {
   return (
@@ -20,13 +21,7 @@ const App: React.FC = () => {
           );
         })}
       </main>
-      <div className="attribution">
-        Challenge by{" "}
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
-          Frontend Mentor
-        </a>
-        . Coded by <a href="#">Your Name Here</a>.
-      </div>
+      <Attribution/>
     </div>
   );
 };
