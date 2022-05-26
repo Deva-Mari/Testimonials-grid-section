@@ -1,10 +1,9 @@
-import React from 'react';
-import './App.css';
+import React from "react";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
@@ -16,7 +15,14 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <div className="attribution">
+        Challenge by{" "}
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+          Frontend Mentor
+        </a>
+        . Coded by <a href="#">Your Name Here</a>.
+      </div>
     </div>
   );
 }
