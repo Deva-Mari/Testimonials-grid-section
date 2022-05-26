@@ -7,6 +7,7 @@ const Card: React.FC<{
   function: string;
   blurb: string;
   quote: string;
+  background: string;
 }> = (props) => {
   // importing client image conditionally
   const [clientImage, setClientImage] = useState("");
@@ -16,7 +17,7 @@ const Card: React.FC<{
   );
 
   return (
-    <div className={styles.card}>
+    <div className={`${styles.card} ${styles[props.background]}` }>
       <div className={styles.header}>
         <img src={clientImage} alt={props.name} />
         <div>
@@ -25,7 +26,7 @@ const Card: React.FC<{
         </div>
       </div>
       <p className={styles.blurb}>{props.blurb}</p>
-      <p className={styles.quote}>{props.quote}</p>
+      <p className={styles.quote}><i>" </i>{props.quote} <i>"</i></p>
     </div>
   );
 };

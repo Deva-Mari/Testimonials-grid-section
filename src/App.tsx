@@ -15,6 +15,7 @@ const App: React.FC = () => {
               function={item.function}
               blurb={item.blurb}
               quote={item.quote}
+              background={item.background}
             />
           );
         })}
