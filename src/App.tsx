@@ -1,21 +1,24 @@
 import React from "react";
+import data from "./data/data.json";
+import Card from "./components/Card";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <div className="App">
-      {/* <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
+    <div>
+      <main>
+        {data.map((item) => {
+          return (
+            <Card
+              key={item.name}
+              name={item.name}
+              picture={item.picture}
+              function={item.function}
+              blurb={item.blurb}
+              quote={item.quote}
+            />
+          );
+        })}
+      </main>
       <div className="attribution">
         Challenge by{" "}
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
@@ -25,6 +28,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
