@@ -1,1 +1,49 @@
-/* No CSS *//*# sourceMappingURL=Card.module.css.map */
+.card {
+  padding: 33px;
+  padding-top: 22px;
+  border-radius: 10px;
+  margin: 1.5rem;
+}
+
+.card:first-of-type {
+  background-image: url(../assets/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 0%;
+}
+
+.card .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card .header img {
+  border-radius: 50%;
+  border: 3px solid rgba(117, 65, 200, 0.2);
+  margin-right: 1rem;
+  width: 2.5rem;
+}
+
+.card .header div h2 {
+  font-size: .9rem;
+}
+
+.card .header div p {
+  opacity: .5;
+}
+
+.card .blurb {
+  margin: .8rem 0;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.card .quote {
+  opacity: .5;
+  font-size: 14px;
+  line-height: 1.1rem;
+}
+/*# sourceMappingURL=Card.module.css.map */

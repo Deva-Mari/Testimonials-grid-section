@@ -25,7 +25,7 @@ const Card: React.FC<{
         </div>
       </div>
       <p className={styles.blurb}>{props.blurb}</p>
-      <p className={styles.quote}>props.quote</p>
+      <p className={styles.quote}>{props.quote}</p>
     </div>
   );
 };
