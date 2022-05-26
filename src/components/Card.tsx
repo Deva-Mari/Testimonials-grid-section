@@ -1,7 +1,8 @@
 import styles from "../css/Card.module.css";
-import React, {useState} from "react";
+import React, { useState } from "react";
 
 const Card: React.FC<{
+  id: number;
   name: string;
   picture: string;
   function: string;
@@ -12,12 +13,14 @@ const Card: React.FC<{
   // importing client image conditionally
   const [clientImage, setClientImage] = useState("");
   let imgName = props.picture;
-  import(`../assets/${imgName}`).then((image) =>
-    setClientImage(image.default)
-  );
+  import(`../assets/${imgName}`).then((image) => setClientImage(image.default));
 
   return (
-    <div className={`${styles.card} ${styles[props.background]}` }>
+    <div
+      className={`${styles.card} ${styles[props.background]} ${
+        styles[`id` + props.id]
+      }`}
+    >
       <div className={styles.header}>
         <img src={clientImage} alt={props.name} />
         <div>
@@ -26,7 +29,10 @@ const Card: React.FC<{
         </div>
       </div>
       <p className={styles.blurb}>{props.blurb}</p>
-      <p className={styles.quote}><i>" </i>{props.quote} <i>"</i></p>
+      <p className={styles.quote}>
+        <i>" </i>
+        {props.quote} <i>"</i>
+      </p>
     </div>
   );
 };

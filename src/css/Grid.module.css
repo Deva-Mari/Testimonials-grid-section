@@ -1,0 +1,13 @@
+@media (min-width: 481px) {
+  .grid {
+    padding: 5rem 0;
+    width: 75%;
+    margin: auto;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: "one one two five" "three four four five";
+  }
+}
+/*# sourceMappingURL=Grid.module.css.map */

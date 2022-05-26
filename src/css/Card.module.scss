@@ -65,7 +65,9 @@
 .white {
   color: $veryDarkGrayishBlue;
   background-color: $white;
-  .quote{font-weight: 600}
+  .quote {
+    font-weight: 600;
+  }
 }
 .grey {
   background-color: $veryDarkGrayishBlue;
@@ -76,5 +78,31 @@
     img {
       border: 3px solid $moderateViolet;
     }
+  }
+}
+
+//styling for grid
+@media (min-width: 481px) {
+  .card{
+    margin: 1rem;
+    .quote{
+      padding-right: 0px;
+    }
+  }
+
+  .id1 {
+    grid-area: one;
+  }
+  .id2 {
+    grid-area: two;
+  }
+  .id3 {
+    grid-area: three;
+  }
+  .id4 {
+    grid-area: four;
+  }
+  .id5 {
+    grid-area: five;
   }
 }
