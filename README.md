@@ -29,7 +29,7 @@ Users should be able to:
 ### Links
 
 - Repository URL: (https://github.com/Deva-Mari/Testimonials-grid-section)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://voluble-peony-253e35.netlify.app/)
 
 ## My process
 
