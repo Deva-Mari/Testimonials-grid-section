@@ -10,4 +10,13 @@
         grid-template-areas: "one one two five" "three four four five";
   }
 }
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
 /*# sourceMappingURL=Grid.module.css.map */
