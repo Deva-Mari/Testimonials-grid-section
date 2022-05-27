@@ -4,6 +4,7 @@ import styles from "../css/Grid.module.css";
 
 const Grid = () =>{
     return(<main className={styles.grid}>
+      {/* display one card per client */}
         {data.map((item) => {
           return (
             <Card

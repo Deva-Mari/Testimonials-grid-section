@@ -17,6 +17,7 @@ const Card: React.FC<{
 
   return (
     <div
+      // classNames based on props
       className={`${styles.card} ${styles[props.background]} ${
         styles[`id` + props.id]
       }`}
